@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+            animation: slide-down 1s ease-in-out;
+        }
+        @keyframes slide-down {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fade-in 1s forwards;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .skills, .testimonials, .contact-form {
+            margin-top: 30px;
+        }
+        .skills li, .testimonials li {
+            margin-bottom: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Personal Webpage</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm an experienced professional with a passion for digital marketing and SEO. I love helping businesses grow by optimizing their online presence and creating successful strategies for social media and Google Ads.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <ul>
+        <li><strong>Project 1:</strong> E-commerce SEO Optimization</li>
+        <li><strong>Project 2:</strong> Google Ads for a retail business</li>
+        <li><strong>Project 3:</strong> Social media marketing for an international client</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Social Media Marketing</li>
+        <li>Google Ads Management</li>
+        <li>Content Creation</li>
+        <li>Data Analysis & Strategy</li>
+    </ul>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <ul class="testimonials">
+        <li>"Professional, reliable, and a joy to work with. Our digital presence improved significantly!" – Client 1</li>
+        <li>"Delivered excellent results on time. I highly recommend their SEO services." – Client 2</li>
+        <li>"Great insights and strategies! Our business grew thanks to their expertise." – Client 3</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 All rights reserved.</p>
+</footer>
+
+</body>
+</html>
